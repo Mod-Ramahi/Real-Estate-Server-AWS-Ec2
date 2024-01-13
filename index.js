@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(bodyParser.json());
 
-const originAllowed = 'https://real-estate-mern-full-stack-ui.vercel.app';
+const originAllowed = '*';
 
 app.use((req, res, next) => {
     // res.header('Access-Control-Allow-Credentials', true)
